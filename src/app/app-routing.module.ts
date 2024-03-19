@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { PaginaNaoEncontradaComponent } from './pagina-nao-encontrada/pagina-nao-encontrada.component';
 
 const ROUTES: Routes = [
   {
@@ -15,7 +15,7 @@ const ROUTES: Routes = [
   //
   {
     path: "**",
-    component: PageNotFoundComponent
+    component: PaginaNaoEncontradaComponent
   }
 ];
 
