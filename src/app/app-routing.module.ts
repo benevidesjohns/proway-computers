@@ -12,6 +12,7 @@ const ROUTES: Routes = [
     redirectTo: "produtos",
     pathMatch: "full"
   },
+  { path: 'carrinho', loadChildren: () => import('./carrinho/carrinho.module').then(m => m.CarrinhoModule) },
   //
   {
     path: "**",
