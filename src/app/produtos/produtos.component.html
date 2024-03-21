@@ -1,4 +1,4 @@
-<section class="product-list">
+<section class="product-list" *ngIf="produtos?.length else semProdutos">
     <div class="product-list__card" *ngFor="let produto of produtos">
         <a routerLink="{{produto.id}}" class="product-list__link">
             <img [src]="produto.imagem">
@@ -9,3 +9,6 @@
         </a>
     </div>
 </section>
+<ng-template #semProdutos>
+    <p>Nenhum produto encontrado.</p>
+</ng-template>

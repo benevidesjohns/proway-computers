@@ -1,10 +1,10 @@
 .product-list {
     padding: 40px 0;
-    width: fit-content;
+    width: 100%;
     display: flex;
     gap: 20px;
     flex-flow: row wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     align-content: center;
 }
 
